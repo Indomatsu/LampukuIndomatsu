@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lampu ku Indomatsu - Bangga pakai produk Indonesia</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #004cff;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      background-image: url("bekground.jpg");
+      color: rgb(0, 47, 255);
+      padding: 100px 40px;
+      text-align: center;
+
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0f172a;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+.products{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 produk per baris */
+  gap:20px;
+}
+
+    .keunggulan {
+        color:red;
+    }
+    .product {
+      background: white;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .feature {
+      background: #002fff;
+      color: white;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+    }
+.wow{
+    color:blue;
+}
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #002fff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+    @media(max-width:900px){
+  .products{
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media(max-width:600px){
+  .products{
+    grid-template-columns: 1fr; /* HP */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Indomatsu.png" width="100px">
+  <h1>Lampu ku Indomatsu! - Bangga pakai produk Indonesia!</h1>
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#products">Produk</a>
+    <a href="#features">Keunggulan</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Solusi Pencahayaan Untuk Anda.</h2>
+  <p>Kami menyediakan lampu berkualitas dengan harga yang terjangkau untuk rumah, kantor, tempat ibadah, sekolah, pusat perbelanjaan, dan lain-lain.</p>
+</div>
+
+<section id="about" class="about">
+  <h2>Tentang Kami</h2>
+  <p>
+    Indomatsu adalah perusahaan yang bergerak di bidang elektronik. Kami menyediakan produk-produk berkualitas dengan harga yang terjangkau, menjadikan produk kami pilihan yang pas untuk anda.
+
+    Kami selalu memperhatikan kualitas produk kami dengan Quality Control yang ketat untuk memastikan produk kami benar-benar layak sebelum sampai ke tangan konsumen.
+
+    Salah satu produk kami yang paling banyak diminati adalah lampu. Kami menyediakan berbagai jenis lampu untuk memenuhi kebutuhan konsumen.
+
+    Contoh produk lampu yang kami buat adalah lampu bohlam E27, lampu sorot, senter, lampu jalan mini, lampu Emergency, dan lain-lain.
+  </p>
+</section>
+
+<section id="products">
+  <h2>Produk Kami</h2>
+  <div class="products">
+    <div class="product">
+      <img src="Ecomaster Series.png">
+      <h3>LED Bulb - Ecomaster Series</h3>
+      <p>Pilihan dengan harga yang terjangkau namun tetap berkualitas.
+        Tersedia: 3,5,7,9,12,15W 220V ~ Dudukan: E27
+      </p>
+            <p class="keunggulan"><b>Keunggulan: Ekonomis, terang, awet.</b></p>
+                        <p class="wow"><b>Best Seller!!!</b></p>
+    </div>
+
+    <div class="product">
+      <img src="strtlght.jpg">
+      <h3>Mini Street Light Fixture</h3>
+      <p>Rumah lampu jalan mini tempel tembok, lampu bisa diganti.
+        Maks 80W 110-220V ~ E27
+      </p>
+            <p class="keunggulan"><b>Keunggulan: Material kuat, harga terjangkau.</b></p>
+                    <p class="keunggulan"><b>Tersedia paket pembelian dengan Ecomaster 15W.</b></p>
+    </div>
+
+    <div class="product">
+      <img src="strip.jpg">
+      <h3>LED Strip 2835 RGB w/ Remote</h3>
+      <p>Lampu LED Strip dengan LED Chip 2835, pakai remot.
+        Tersedia: 5,10,15,20M 220V ~ 50/60Hz / 12V DC
+      </p>
+            <p class="keunggulan"><b>Keunggulan: Anti air, sudah ada perekat, praktis, mudah dalam pengoperasian, awet.</b></p>
+          
+
+
+    </div>
+        <div class="product">
+      <img src="dlf.jpg">
+      <h3>Desk Light Fixture</h3>
+      <p>lampu meja / lampu belajar.
+        Colorful Maks 45W 110-220V ~ 
+      </p>
+            <p class="keunggulan"><b>Keunggulan: Desain Menarik dengan pilihan warna, pemasangan simpel, terjangkau.</b></p>
+                  <p class="keunggulan"><b>Tersedia paket pembelian dengan Ecomaster 7W.</b></p>
+                    <p class="wow"><b>Best Seller!!!</b></p>
+
+
+    </div>
+        <div class="product">
+      <img src="strtlghtbil (1).jpg">
+      <h3>Mini Street Light w/ Built-In LED</h3>
+      <p>lampu jalan mini tempel tembok Built-In LED.
+        Tersedia: 20,30,40,50W 220V ~ 50/60Hz
+      </p>
+            <p class="keunggulan"><b>Keunggulan: Pemasangan lebih simpel, lebih terang, lebih murah, awet.</b></p>
+
+
+
+    </div>
+            <div class="product">
+      <img src="Timer Relay.jpg">
+      <h3>Timer Relay BT/BUTTON</h3>
+      <p>Menyalakan / mematikan peralatan elektronik atau lampu secara otomatis berdasarkan jam.
+        Tersedia: Bluetooth dan tombol. 220V ~ 50Hz Maks 300W (jika beban lebih dari 300W bisa dipasang Kontaktor).
+      </p>
+            <p class="keunggulan"><b>Keunggulan: Awet, setting mudah, daya besar</b></p>
+            
+
+
+    </div>
+    <h3>Masih banyak produk lain, bisa menghubungi No. Whatsapp dibawah.</h3>
+
+</section>
+
+<section id="features">
+  <h2>Keunggulan Kami</h2>
+  <div class="features">
+    <div class="feature"><b>Berkualitas</b></div>
+    <div class="feature"><b>After Sales Service Baik</b></div>
+    <div class="feature"><b>QC Ketat</b></div>
+    <div class="feature"><b>Ekonomis</b></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Kontak</h2>
+  <p>📍 Sidoarjo, Indonesia</p>
+  <p>📧 indomatsuid@gmail.com</p>
+  <p>Whatsapp: +62 812-3215-9117</p>
+
+    <img src="Whatsapp.jpg" width="40px">
+    <a href="https://wa.me/6281232159117"><button>Klik untuk menghubungi Via Whatsapp</button></a>
+  
+</section>
+
+<footer>
+  Terimakasih telah mengunjungi Website kami!
+</footer>
+
+</body>
+</html>
